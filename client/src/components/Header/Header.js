@@ -174,51 +174,51 @@ class Header extends React.Component {
                   />
                   <ul>
                     <li>
-                      <a href='http://www.google.com'>HOW IT WORKS</a>
+                      <a href='http://www.google.com'>How It Works</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>PRICING</a>
+                      <Link to='/pricing' style={{ textDecoration: 'none' }}>Pricing</Link>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>AGENCY SERVICE</a>
+                      <a href='http://www.google.com'>Agency Service</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>ACTIVE CONTESTS</a>
+                      <a href='http://www.google.com'>Active Contests</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>WINNERS</a>
+                      <a href='http://www.google.com'>Winners</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>LEADERBOARD</a>
+                      <a href='http://www.google.com'>Leaderboard</a>
                     </li>
                     <li className={styles.last}>
-                      <a href='http://www.google.com'>BECOME A CREATIVE</a>
+                      <a href='http://www.google.com'>Become A Creative</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Our Work</span>
+                  <span>OUR WORK</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'
                   />
                   <ul>
                     <li>
-                      <a href='http://www.google.com'>NAMES</a>
+                      <a href='http://www.google.com'>Names</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>TAGLINES</a>
+                      <a href='http://www.google.com'>Taglines</a>
                     </li>
                     <li>
-                      <a href='http://www.google.com'>LOGOS</a>
+                      <a href='http://www.google.com'>Logos</a>
                     </li>
                     <li className={styles.last}>
-                      <a href='http://www.google.com'>TESTIMONIALS</a>
+                      <a href='http://www.google.com'>Testimonials</a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <span>Names For Sale</span>
+                  <span>NAME FOR SALE</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'
@@ -245,7 +245,7 @@ class Header extends React.Component {
                   </ul>
                 </li>
                 <li>
-                  <span>Blog</span>
+                  <span>BLOG</span>
                   <img
                     src={`${CONSTANTS.STATIC_IMAGES_PATH}menu-down.png`}
                     alt='menu'

@@ -1,0 +1,73 @@
+.pricesContainer  
+  width: 100%
+  max-width: 1140px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.priceBlockContainer
+    width: 23%
+    min-width: 200px    
+    
+.priceBlockHeader
+    box-sizing: border-box
+    width: 100%
+    min-height: 230px
+    border: 10px solid
+    padding: 20px
+    display: flex
+    flex-direction: column
+    justify-content: between-space
+    
+    
+    h3
+        font-size: x-large
+        font-weight: bold   
+
+    p
+        margin-top: 10px
+        color: rgb(128, 128, 128)
+
+    div
+        text-align: right
+        margin-top: auto
+        font-size: x-large
+        font-weight: bold    
+
+.priceBlockHeader:hover
+       box-shadow: 0 10px 10px #6f6f6f
+
+.optionsList
+  position: relative
+
+  li 
+    padding: 10px 0
+    border-bottom: 1px solid lightgrey
+
+  li:last-child
+    border-bottom: none
+
+  li::after
+    content: attr(data-tooltip)
+    width: 100%
+    position: absolute
+    left: 100%
+    transform: translateY(-50%)
+    box-shadow: 0 2px 5px grey
+    background: white
+    opacity: 0
+    z-index: 100
+    transition: 1s
+    padding: 5px
+
+  li:hover::after
+    opacity: 1
+
+.startLink
+  display: block
+  width: 100%
+  border-radius: 5px
+  padding: 10px 0
+  text-align: center
+  text-decoration: none
+  color: white
