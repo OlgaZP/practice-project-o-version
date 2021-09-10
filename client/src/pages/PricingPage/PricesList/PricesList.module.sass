@@ -5,19 +5,38 @@
   justify-content: space-between
   flex-wrap: wrap
 
-.priceBlockContainer
-    width: 23%
-    min-width: 200px    
+  @media screen and (max-width: 767px)
+    flex-direction: column
+
+.priceBlockContainer    
+  width: 23%
+  min-width: 200px
+  border: none  
+
+  @media screen and (max-width: 767px)
+    width: 100%
+    box-sizing: border-box    
+    border: 10px solid
+    margin: 10px
+    padding: 20px   
+    
     
 .priceBlockHeader
     box-sizing: border-box
     width: 100%
     min-height: 230px
-    border: 10px solid
-    padding: 20px
+    border: 10px solid 
+    padding: 20px      
     display: flex
     flex-direction: column
-    justify-content: between-space
+    justify-content: space-between
+
+    @media screen and (max-width: 767px)
+        border: none
+        border-bottom: 1px solid lightgrey
+        min-height: 100px
+        padding: 0
+        flex-direction: row
     
     
     h3
@@ -32,10 +51,17 @@
         text-align: right
         margin-top: auto
         font-size: x-large
-        font-weight: bold    
+        font-weight: bold
+
+        @media screen and (max-width: 767px)
+            margin: 0    
 
 .priceBlockHeader:hover
        box-shadow: 0 10px 10px #6f6f6f
+
+.priceDescription
+    @media screen and (max-width: 767px)
+        display: none
 
 .optionsList
   position: relative
