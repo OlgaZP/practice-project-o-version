@@ -24,7 +24,7 @@ const appReducer = combineReducers({
   updateContestStore: updateContestReducer,
   chatStore: chatReducer,
   userProfile: userProfileReducer,
-  transactions: transactionReducer,
+  transaction: transactionReducer,
 });
 
 export default appReducer;

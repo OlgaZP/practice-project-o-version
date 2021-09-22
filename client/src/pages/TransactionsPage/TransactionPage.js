@@ -9,8 +9,8 @@ import { getTransactionsAction } from '../../actions/actionCreator'
 
 function TransactionPage(props) {
 
-   const { isFetching, error, transactions } = props
-console.log(`props from TransactionsPage`, props)
+   const { isFetching, error, transactions, getTransactions } = props
+   
    useEffect(() => {
    getTransactions()    
    }, [])
@@ -27,7 +27,7 @@ console.log(`props from TransactionsPage`, props)
     )
 }
 
-const mapStateToProps = state => state.transactions
+const mapStateToProps = state => state.transaction
 const mapDispatchToProps = dispatch => ({
   getTransactions: () => dispatch(getTransactionsAction())
 })

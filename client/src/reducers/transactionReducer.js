@@ -1,7 +1,7 @@
 import ACTION from './../actions/actionTypes';
 
 const initialState = {
-    isFetching: true,
+    isFetching: false,
     error: null,
     transactions: [],
 };
@@ -12,8 +12,8 @@ export default function transacionReducer (state = initialState, action) {
         case ACTION.GET_TRANSACTIONS_REQUEST : {
             return {
                 ...state,
-                isFetching: false,
-                error: null,
+                isFetching: true,
+                error: null,                
             }
         }
 
