@@ -19,6 +19,7 @@ export default function transacionReducer (state = initialState, action) {
 
         case ACTION.GET_TRANSACTIONS_SUCCESS : {
             const { transactions } = action;
+            // console.log(`in reducer transactions`, transactions)
             return {
                 ...state,
                 isFetching: false,

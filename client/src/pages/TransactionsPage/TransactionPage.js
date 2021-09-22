@@ -10,15 +10,15 @@ import { getTransactionsAction } from '../../actions/actionCreator'
 function TransactionPage(props) {
 
    const { isFetching, error, transactions } = props
-
+console.log(`props from TransactionsPage`, props)
    useEffect(() => {
-    getTransactions()    
+   getTransactions()    
    }, [])
    
     return (
         <>
           <Header />
-          <h2>Hello,</h2>
+          <h2>Hello, </h2>
           <section className={styles.transactionTableContainer}>
           <TransactionTable transactions={transactions} />
           </section>
@@ -27,7 +27,7 @@ function TransactionPage(props) {
     )
 }
 
-const mapStateToProps = state => state.transaction
+const mapStateToProps = state => state.transactions
 const mapDispatchToProps = dispatch => ({
   getTransactions: () => dispatch(getTransactionsAction())
 })

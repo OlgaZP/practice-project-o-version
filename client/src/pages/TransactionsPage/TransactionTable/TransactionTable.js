@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 export const TransactionTable = props => {
     const { transactions } = props
+    console.log(`props from TransactioTable props`, props)
     return (
         <div>
             <table>

@@ -17,7 +17,7 @@ import CONSTANTS from './constants';
 import browserHistory from './browserHistory';
 import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatContainer';
 import PricingPage from './pages/PricingPage/PricingPage';
-import TransactionsPage from './pages/TransactionsPage/TransactionPage';
+import TransactionPage from './pages/TransactionsPage/TransactionPage';
 import { withAuthorization, withNotAuthorization } from './components/HOCs';
 
 class App extends Component {
@@ -68,7 +68,7 @@ class App extends Component {
           <Route exact path="/dashboard" component={withAuthorization(Dashboard)} />
           <Route exact path="/contest/:id" component={withAuthorization(ContestPage)} />
           <Route exact path="/account" component={withAuthorization(UserProfile)} />
-          <Route exact path="/transactions" component={withAuthorization(TransactionsPage)} />
+          <Route exact path="/transactions" component={withAuthorization(TransactionPage)} />
           <Route exact path="/pricing" component={PricingPage} />
           <Route component={NotFound} />
         </Switch>
