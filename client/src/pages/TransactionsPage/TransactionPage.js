@@ -9,7 +9,9 @@ import { getTransactionsAction } from '../../actions/actionCreator'
 
 function TransactionPage(props) {
 
-   const { isFetching, error, transactions, getTransactions } = props
+   const { getTransactions,
+           transaction: {transactions}, 
+           user : { data : { displayName}} } = props  
    
    useEffect(() => {
    getTransactions()    
@@ -17,9 +19,9 @@ function TransactionPage(props) {
    
     return (
         <>
-          <Header />
-          <h2>Hello, </h2>
-          <section className={styles.transactionTableContainer}>
+          <Header />          
+          <section className={styles.transactionSection}>
+          <h2 style={{color: "rgb(69, 90, 137)"}}>{displayName}, verify history of your transactions! </h2>
           <TransactionTable transactions={transactions} />
           </section>
           <Footer />  
@@ -27,7 +29,12 @@ function TransactionPage(props) {
     )
 }
 
-const mapStateToProps = state => state.transaction
+const mapStateToProps = state => {
+   return {
+     transaction: state.transaction,
+     user: state.userStore,
+   }
+ };
 const mapDispatchToProps = dispatch => ({
   getTransactions: () => dispatch(getTransactionsAction())
 })

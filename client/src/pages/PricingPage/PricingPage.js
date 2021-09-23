@@ -16,7 +16,7 @@ function PricingPage() {
         <section className={styles.pricingForSection}>
             <h2>Pricing for</h2>
             <select name="selectPriceFor">
-                {selectionProposition.map((priceFor, i) => (<option key={i} value="{priceFor}">{priceFor}</option>))}  
+                {selectionProposition.map((priceFor, i) => (<option key={i} value={priceFor}>{priceFor}</option>))}  
             </select>
             <img src="https://image.shutterstock.com/image-vector/video-button-260nw-197201618.jpg" alt="Посетить сайт MDN" style={{"border": "2px solid grey"}}></img>
         </section>

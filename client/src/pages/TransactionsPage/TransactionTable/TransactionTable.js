@@ -1,20 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types' 
+import styles from './TransactionTable.module.sass'
 
 export const TransactionTable = props => {
     const { transactions } = props
     
     return (
-        <div>
+        <div className={styles.transactionTableContainer}>
             <table>
                 <caption>Transaction History</caption>
                 <thead>
-                    <th>
-                        <td>ID</td>
-                        <td>Date</td>
-                        <td>Sum</td>
-                        <td>Type</td>
-                    </th>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Sum</th>
+                        <th>Type</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {transactions.map( ({id, date, amount, type}) => (
