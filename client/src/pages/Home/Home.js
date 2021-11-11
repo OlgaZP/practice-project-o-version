@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import AgencyLevelExperience from './AgencyLevelExperience/AgencyLevelExperience';
 
 const Home = props => {
   const [index, setIndex] = useState(0);
@@ -249,6 +250,9 @@ const Home = props => {
               <Link className={styles.button__link} to='/dashboard'>
                 DASHBOARD
               </Link>
+            </div>
+            <div className={styles.agencyLevelContainer}>
+              <AgencyLevelExperience />
             </div>
             <div className={styles.blueContainer}>
               <h2 className={styles.whiteUnderline}>What our customers say</h2>
