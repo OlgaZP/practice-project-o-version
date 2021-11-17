@@ -5,20 +5,27 @@ import articles from './articles.json';
 
 function AgencyLevelExperience () {
   const mapArticles = (article, i) => (
-    <article key={i}>
-      <i className={article.iconClass} />
+    <article className={styles.article} key={i}>
+      <div
+        style={{ color: article.color, backgroundColor: article.bgColor }}
+        className={styles.iconContainer}
+      >
+        <i className={article.iconsClass} />
+      </div>
       <h3>{article.header}</h3>
       <p>
         {article.body}
-        <Link to={article.link}>Learn More.</Link>
+        <Link to={article.link}> Learn More.</Link>
       </p>
     </article>
   );
 
   return (
-    <section>
+    <section className={styles.agencySection}>
       <h2> Agency Level Experience </h2>
-      <div>{articles.map(mapArticles)}</div>
+      <div className={styles.articlesContainer}>
+        {articles.map(mapArticles)}
+      </div>
     </section>
   );
 }
