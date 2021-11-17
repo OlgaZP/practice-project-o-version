@@ -33,6 +33,7 @@ export const getCustomersContests = data =>
     `/contests?limit=${data.limit}&offset=${data.offset}&status=${data.contestStatus}`
   );
 export const updateContest = data => http.post('/contests/updateContest', data);
+
 export const getActiveContests = ({
   offset,
   limit,
@@ -52,12 +53,8 @@ export const getActiveContests = ({
     ownEntries,
   });
 
-export const getContestById = data =>
-  http.get('/contests/getContestById', {
-    headers: {
-      contestId: data.contestId,
-    },
-  });
+export const getContestById = ({ contestId }) =>
+  http.get(`/contests/${contestId}`);
 
 //transactions
 const transactions = [
