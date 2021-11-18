@@ -3,6 +3,7 @@ const basicMiddlewares = require('./middlewares/basicMiddlewares');
 const hashPass = require('./middlewares/hashPassMiddle');
 const userController = require('./controllers/userController');
 const contestController = require('./controllers/contestController');
+const offerController = require('./controllers/offerController');
 const checkToken = require('./middlewares/checkToken');
 const validators = require('./middlewares/validators');
 const chatController = require('./controllers/chatController');
@@ -22,6 +23,9 @@ router.post('/login', validators.validateLogin, userController.login);
 
 //contestsRouter
 router.use('/contests', contestRouter);
+
+//offerRouter - get offers information(text&status)
+router.get('/offers', offerController.getOffers);
 
 //offersRouter?
 router.post(
