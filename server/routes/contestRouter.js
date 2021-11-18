@@ -6,15 +6,16 @@ const upload = require('./../utils/fileUpload');
 
 const contestRouter = Router();
 
-contestRouter.post(
-  '/getAllContests',
+contestRouter.get(
+  '/',
   checkToken.checkToken,
   basicMiddlewares.onlyForCreative,
+  basicMiddlewares.parseQuery,
   contestController.getContests
 );
 
 contestRouter.get(
-  '/',
+  '/customers',
   checkToken.checkToken,
   contestController.getCustomersContests
 );
