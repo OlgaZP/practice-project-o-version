@@ -19,13 +19,14 @@ import ChatContainer from './components/Chat/ChatComponents/ChatContainer/ChatCo
 import PricingPage from './pages/PricingPage/PricingPage';
 import TransactionPage from './pages/TransactionsPage/TransactionPage';
 import { withAuthorization, withNotAuthorization } from './components/HOCs';
+import HowItWorksPage from './pages/HowItWorksPage/HowItWorksPage';
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <Router history={browserHistory}>
         <ToastContainer
-          position="top-center"
+          position='top-center'
           autoClose={5000}
           hideProgressBar
           newestOnTop={false}
@@ -36,14 +37,26 @@ class App extends Component {
           pauseOnHover
         />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={withNotAuthorization(LoginPage)} />
-          <Route exact path="/registration" component={withNotAuthorization(RegistrationPage)} />
-          <Route exact path="/payment" component={withAuthorization(Payment)} />
-          <Route exact path="/startContest" component={withAuthorization(StartContestPage)} />
+          <Route exact path='/' component={Home} />
           <Route
             exact
-            path="/startContest/nameContest"
+            path='/login'
+            component={withNotAuthorization(LoginPage)}
+          />
+          <Route
+            exact
+            path='/registration'
+            component={withNotAuthorization(RegistrationPage)}
+          />
+          <Route exact path='/payment' component={withAuthorization(Payment)} />
+          <Route
+            exact
+            path='/startContest'
+            component={withAuthorization(StartContestPage)}
+          />
+          <Route
+            exact
+            path='/startContest/nameContest'
             component={withAuthorization(ContestCreationPage, {
               contestType: CONSTANTS.NAME_CONTEST,
               title: 'Company Name',
@@ -51,7 +64,7 @@ class App extends Component {
           />
           <Route
             exact
-            path="/startContest/taglineContest"
+            path='/startContest/taglineContest'
             component={withAuthorization(ContestCreationPage, {
               contestType: CONSTANTS.TAGLINE_CONTEST,
               title: 'TAGLINE',
@@ -59,17 +72,34 @@ class App extends Component {
           />
           <Route
             exact
-            path="/startContest/logoContest"
+            path='/startContest/logoContest'
             component={withAuthorization(ContestCreationPage, {
               contestType: CONSTANTS.LOGO_CONTEST,
               title: 'LOGO',
             })}
           />
-          <Route exact path="/dashboard" component={withAuthorization(Dashboard)} />
-          <Route exact path="/contest/:id" component={withAuthorization(ContestPage)} />
-          <Route exact path="/account" component={withAuthorization(UserProfile)} />
-          <Route exact path="/transactions" component={withAuthorization(TransactionPage)} />
-          <Route exact path="/pricing" component={PricingPage} />
+          <Route
+            exact
+            path='/dashboard'
+            component={withAuthorization(Dashboard)}
+          />
+          <Route
+            exact
+            path='/contest/:id'
+            component={withAuthorization(ContestPage)}
+          />
+          <Route
+            exact
+            path='/account'
+            component={withAuthorization(UserProfile)}
+          />
+          <Route
+            exact
+            path='/transactions'
+            component={withAuthorization(TransactionPage)}
+          />
+          <Route exact path='/pricing' component={PricingPage} />
+          <Route exact path='/how-it-works' component={HowItWorksPage} />
           <Route component={NotFound} />
         </Switch>
         <ChatContainer />

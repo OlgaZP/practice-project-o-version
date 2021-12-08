@@ -64,6 +64,11 @@ const Home = props => {
             </div>
             <div className={styles.container__description}>
               <h2 className={styles.blueUnderline}>Why Squadhelp?</h2>
+              <div className={styles.button}>
+                <Link className={styles.button__link} to='/how-it-works'>
+                  Learn How Squadhelp Work
+                </Link>
+              </div>
               <div className={styles.cardContainer}>
                 <div className={styles.card}>
                   <img

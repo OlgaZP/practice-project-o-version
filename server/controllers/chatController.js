@@ -1,7 +1,10 @@
 const _ = require('lodash');
-const { Conversation, Message, Catalog } = require('../models/mongoModels');
+// const { Conversation, Message, Catalog } = require('../models/mongoModels');
+const Catalog = require('../models/mongoModels/Catalog');
+const Message = require('../models/mongoModels/Message');
+const Conversation = require('../models/mongoModels/Conversation');
 
-const db = require('../models');
+const db = require('../models/mongoModels');
 const userQueries = require('./queries/userQueries');
 const controller = require('../socketInit');
 
@@ -297,6 +300,9 @@ module.exports.deleteCatalog = async (req, res, next) => {
 };
 
 module.exports.getCatalogs = async (req, res, next) => {
+  console.log(`in getCatalogs chatController`);
+  console.log(`db`, db);
+  console.log(`Catalog`, Catalog);
   try {
     const catalogs = await Catalog.aggregate([
       { $match: { userId: req.tokenData.userId } },
