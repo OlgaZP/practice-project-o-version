@@ -1,0 +1,41 @@
+.sectionContainer
+  width: 90%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.buttonsContainer  
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media screen and (max-width:978px)
+    flex-direction: column
+
+.buttonNotActive
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center 
+  max-width: 30%   
+  border: 1px solid lightgrey
+  border-radius: 5px
+  padding: 1em
+  margin: 1em
+  @media screen and (max-width:978px)
+    max-width: 90%  
+  &:active
+    border: 2px solid green
+  &>div
+    color: white
+    background-color: grey
+    border-radius: 2em
+    padding: 0.5em  1em 
+  p
+    color: grey
+    width: 90%
+    margin: 0 1em
+    line-height: 1.5em
+
+.buttonActive 
+  box-shadow: 0 0 15px 5px red
