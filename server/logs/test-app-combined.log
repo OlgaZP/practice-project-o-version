@@ -1,0 +1,785 @@
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:36 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813893},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18307505,"external":19932563,"heapTotal":29396992,"heapUsed":26986144,"rss":57380864},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:36"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":35},"timestamp":"2022-01-11 22:30:36"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:36 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813893},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18318443,"external":19943541,"heapTotal":29396992,"heapUsed":27513632,"rss":58687488},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:36"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":19},"timestamp":"2022-01-11 22:30:36"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:37 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813894},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18312434,"external":19937532,"heapTotal":29396992,"heapUsed":26980896,"rss":58142720},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":19},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:37 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813894},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18322097,"external":19947195,"heapTotal":29396992,"heapUsed":27222056,"rss":58380288},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":21},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:37 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813894},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18331760,"external":19956858,"heapTotal":29396992,"heapUsed":27467832,"rss":58187776},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":20},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:37 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813894},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18328984,"external":19954082,"heapTotal":29396992,"heapUsed":26934584,"rss":57548800},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":20},"timestamp":"2022-01-11 22:30:37"}
+{"level":"info","message":"HTTP POST /login","meta":{"date":"Tue Jan 11 2022 22:30:41 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":404,"message":"Wrong password","name":"UserNotFoundError"},"exception":true,"level":"error","message":"uncaughtException: Wrong password\nUserNotFoundError: Wrong password\n    at Object.module.exports.passwordCompare (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\queries\\userQueries.js:36:11)\n    at async module.exports.login (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\userController.js:16:5)","os":{"loadavg":[0,0,0],"uptime":813898},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18394309,"external":20019407,"heapTotal":30707712,"heapUsed":28537944,"rss":63397888},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"50","content-type":"application/json;charset=UTF-8","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/login","query":{},"url":"/login"},"stack":"UserNotFoundError: Wrong password\n    at Object.module.exports.passwordCompare (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\queries\\userQueries.js:36:11)\n    at async module.exports.login (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\userController.js:16:5)","trace":[{"column":11,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\queries\\userQueries.js","function":"Object.module.exports.passwordCompare","line":36,"method":"passwordCompare","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\controllers\\userController.js","function":"async module.exports.login","line":16,"method":"login","native":false}]},"timestamp":"2022-01-11 22:30:41"}
+{"level":"info","message":"HTTP POST /login","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"50","content-type":"application/json;charset=UTF-8","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/login","query":{},"url":"/login"},"res":{"statusCode":404},"responseTime":271},"timestamp":"2022-01-11 22:30:41"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:43 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813900},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18394309,"external":20019407,"heapTotal":30707712,"heapUsed":28712336,"rss":63569920},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:43"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":12},"timestamp":"2022-01-11 22:30:43"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"date":"Tue Jan 11 2022 22:30:43 GMT+0200 (Восточная Европа, стандартное время)","error":{"code":408,"message":"token error","name":"TokenError"},"exception":true,"level":"error","message":"uncaughtException: token error\nTokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","os":{"loadavg":[0,0,0],"uptime":813900},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\server.js"],"cwd":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18412164,"external":20037262,"heapTotal":30707712,"heapUsed":28952728,"rss":63803392},"pid":21964,"uid":null,"version":"v14.17.1"},"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"stack":"TokenError: token error\n    at module.exports.checkAuth (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js:25:10)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:47:12)\n    at Layer.handle [as handle_request] (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js:429:9","trace":[{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\middlewares\\checkToken.js","function":"module.exports.checkAuth","line":25,"method":"checkAuth","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"next","line":137,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\route.js","function":"Route.dispatch","line":112,"method":"dispatch","native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":22,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":281,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":3,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.handle","line":174,"method":"handle","native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"router","line":47,"method":null,"native":false},{"column":5,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\layer.js","function":"Layer.handle [as handle_request]","line":95,"method":"handle [as handle_request]","native":false},{"column":13,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"trim_prefix","line":317,"method":null,"native":false},{"column":7,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":null,"line":284,"method":null,"native":false},{"column":12,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"Function.process_params","line":335,"method":"process_params","native":false},{"column":10,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express\\lib\\router\\index.js","function":"next","line":275,"method":null,"native":false},{"column":9,"file":"D:\\JSProjects\\practice-project-pe2021-1-before-back\\server\\node_modules\\express-winston\\index.js","function":null,"line":429,"method":null,"native":false}]},"timestamp":"2022-01-11 22:30:43"}
+{"level":"info","message":"HTTP POST /getUser","meta":{"req":{"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br","accept-language":"en-US,en;q=0.9","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJCdXllckZpcnN0bmFtZSIsInVzZXJJZCI6MSwicm9sZSI6ImN1c3RvbWVyIiwibGFzdE5hbWUiOiJCdXllckxhc3RuYW1lIiwiYXZhdGFyIjoiYW5vbi5wbmciLCJkaXNwbGF5TmFtZSI6IkJ1eWVyRGlzcGxheW5hbWUiLCJiYWxhbmNlIjoiMCIsImVtYWlsIjoiYnV5ZXJAZ21haWwuY29tIiwicmF0aW5nIjowLCJpYXQiOjE2NDE4NDczMjcsImV4cCI6MTY0MTg1MDkyN30.A0GcjGWIqB6QlGV_ZNxPnksQ2ELeR4v6Cxi0C7tSYbw","connection":"keep-alive","content-length":"0","host":"localhost:5000","origin":"http://localhost:3000","referer":"http://localhost:3000/","sec-ch-ua":"\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"},"httpVersion":"1.1","method":"POST","originalUrl":"/getUser","query":{},"url":"/getUser"},"res":{"statusCode":408},"responseTime":16},"timestamp":"2022-01-11 22:30:43"}
+message:"HTTP POST /getUser", time:2022-01-11 23:17:19, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:17:19, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:17:19, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:17:19, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:18:04, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:18:04, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:18:04, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:18:04, code: undefined, stackTrace: {undefined} 
+message:"HTTP GET /contests/customers?limit=8&offset=undefined&status=active", time:2022-01-11 23:18:10, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:18:33, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:18:33, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:18:33, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:49, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:49, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:57, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:57, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:57, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:19:57, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:20:18, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:20:18, code: undefined, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:22:51, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:22:59, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:25:20, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:25:22, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:25:26, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:25:29, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:17, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /contests/dataForContest", time:2022-01-11 23:26:17, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:17, code: 500, stackTrace: {undefined} 
+message:"HTTP GET /contests?awardSort=asc&contestId=&industry=&limit=8&offset=0&ownEntries=false&typeIndex=1", time:2022-01-11 23:26:18, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:18, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /contests/dataForContest", time:2022-01-11 23:26:18, code: 500, stackTrace: {undefined} 
+message:"HTTP GET /contests?awardSort=asc&contestId=&industry=&limit=8&offset=0&ownEntries=false&typeIndex=1", time:2022-01-11 23:26:18, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:25, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:28, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:30, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:26:31, code: 200, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:26:31, code: 200, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:26:32, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /contests/dataForContest", time:2022-01-11 23:26:36, code: 200, stackTrace: {undefined} 
+message:"HTTP POST /contests/dataForContest", time:2022-01-11 23:37:49, code: 200, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:37:53, code: 200, stackTrace: {undefined} 
+message:"HTTP POST /getPreview", time:2022-01-11 23:37:53, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-11 23:40:37, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-11 23:40:40, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /login", time:2022-01-13 10:09:26, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-13 10:09:36, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-13 10:09:38, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-13 10:09:41, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-13 10:09:42, code: 500, stackTrace: {undefined} 
+message:"HTTP POST /getUser", time:2022-01-13 10:09:48, code: 500, stackTrace: {undefined} 
+message:"Test logger error stack message... My ERROR!", time:2022-01-13 10:20:47
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T08:25:10.523Z
+message:"Test logger error stack message... My ERROR!", time:2022-01-13 11:17:51
+message:"HTTP POST /getUser", time:2022-01-13 11:18:03
+message:"HTTP POST /getUser", time:2022-01-13 11:18:03
+message:"HTTP POST /login", time:2022-01-13 11:18:06
+message:"HTTP POST /login", time:2022-01-13 11:18:06
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:25:12.944Z
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:25:29.782Z
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:26:20.155Z
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:27:28.078Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:27:50.788Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:28:29.776Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:31:59.628Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+message:"HTTP POST /login", time:2022-01-13T09:32:20.736Z, stackTrace: {undefined}
+message:"HTTP POST /login", time:2022-01-13T09:32:20.740Z, stackTrace: {undefined}
+level: "$(info.level}" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:33:31.182Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:33:48.396Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T09:33:54.947Z, stackTrace: {undefined}
+level: "info" message:"HTTP POST /login", time:2022-01-13T09:33:54.952Z, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:38:19.310Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:39:48.676Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:40:10.490Z, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T09:41:29.397Z, stackTrace: {undefined}
+level: "info" message:"HTTP POST /login", time:2022-01-13T09:41:29.406Z, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:58:37.929Z, , code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T09:59:02.947Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:45:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T09:59:22.819Z, code: 500, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T09:59:36.209Z, code: 500, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:00:17.110Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:04:20.772Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T10:04:48.589Z, code: 404, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:09:18.579Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:22:24.431Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:22:47.827Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T10:29:30.711Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:08:59.209Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:09:54.409Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:10:23.066Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:11:01.047Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:44:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:12:36.121Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T19:13:07.808Z, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T19:13:07.829Z, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T19:13:09.691Z, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T19:13:09.712Z, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:2022-01-13T19:13:09.751Z, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /login", time:2022-01-13T19:13:12.961Z, code: 404, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:19:20.031Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:22:28.623Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:22:43.905Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:25:16.432Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T19:25:52.980Z, code: 404, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:202226, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:32:55.025Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:46:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:2022-01-13T19:34:52.992Z, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:48:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:2022-01-13T19:35:10.592Z, code: 404, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642102770349, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:53:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642102857907, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:50:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /login", time:1642102878415, code: 404, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642531922944, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:50:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /getUser", time:1642532257875, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:1642532257904, code: 408, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534103524, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:66:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534160804, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:66:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534257851, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:66:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534269227, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:66:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534399231, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:68:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534458874, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:68:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534863798, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:69:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /getUser", time:1642534893718, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /login", time:1642534902402, code: 404, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:1642534928201, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:1642534928230, code: 408, stackTrace: {undefined}
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642535027368, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:72:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
+level: "info" message:"HTTP POST /getUser", time:1642535086414, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:1642535086452, code: 408, stackTrace: {undefined}

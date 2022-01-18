@@ -1,0 +1,2 @@
+Starting the daily logfie....level: "info" message:"HTTP POST /getUser", time:1642534928201, code: 408, stackTrace: {undefined}
+level: "info" message:"HTTP POST /getUser", time:1642534928230, code: 408, stackTrace: {undefined}

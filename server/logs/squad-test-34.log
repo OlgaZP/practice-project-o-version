@@ -1,0 +1,17 @@
+level: "error" message:"Test logger error stack message... My ERROR!", time:1642534458874, code: undefined, stackTrace: {Error: My ERROR!
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\config\winstonConfig.js:68:52)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\app.js:5:16)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\JSProjects\practice-project-pe2021-1-before-back\server\server.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)}
